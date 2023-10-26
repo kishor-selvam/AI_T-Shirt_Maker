@@ -3,16 +3,20 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://kishor-selvam.github.io/AI_T-Shirt_Maker",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@react-three/drei": "^9.87.1",
     "@react-three/fiber": "^8.14.5",
     "framer-motion": "^10.16.4",
+    "gh-pages": "^6.0.0",
     "maath": "^0.10.4",
     "react": "^18.2.0",
     "react-color": "^2.19.3",
